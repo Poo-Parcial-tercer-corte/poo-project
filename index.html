@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO Project | Manual Web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar scrolled" id="navbar">
+
+    <div class="nav-logo">
+        <i class="fa-solid fa-code"></i>
+        POO <span>Project</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#inicio" class="">Inicio</a></li>
+        <li><a href="#introduccion" class="active">Introducción</a></li>
+        <li><a href="#clases" class="">Clases y Objetos</a></li>
+        <li><a href="#encapsulamiento" class="">Encapsulamiento</a></li>
+        <li><a href="#constructores" class="">Constructores</a></li>
+        <li><a href="#herencia" class="">Herencia</a></li>
+        <li><a href="#footer">Contacto</a></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="nav-mobile">
+    <a href="#inicio" class="">Inicio</a>
+    <a href="#introduccion" class="active">Introducción</a>
+    <a href="#clases" class="">Clases y Objetos</a>
+    <a href="#encapsulamiento" class="">Encapsulamiento</a>
+    <a href="#constructores" class="">Constructores</a>
+    <a href="#herencia" class="">Herencia</a>
+    <a href="#footer">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+
+    <div class="hero-grid"></div>
+
+    <div class="container">
+
+        <div class="hero-content reveal-left visible">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Manual Web Académico
+            </div>
+
+            <h1 class="hero-title">
+                Manual Web de
+                <span class="line-accent">
+                        Programación Orientada a Objetos
+                    </span>
+            </h1>
+
+            <p class="hero-desc">
+                Aprende los conceptos fundamentales de la Programación
+                Orientada a Objetos mediante ejemplos sencillos,
+                explicaciones claras y ejercicios prácticos en Java.
+            </p>
+
+            <div class="hero-meta">
+
+                <div class="meta-chip">
+                    <i class="fa-solid fa-book"></i>
+                    POO Básica
+                </div>
+
+                <div class="meta-chip">
+                    <i class="fa-brands fa-java"></i>
+                    Ejemplos Java
+                </div>
+
+                <div class="meta-chip">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Desarrollo Web
+                </div>
+
+            </div>
+
+            <div class="hero-actions">
+                <a href="#introduccion" class="btn-primary">
+                    Explorar contenido
+                </a>
+
+                <a href="#footer" class="btn-outline">
+                    Información
+                </a>
+            </div>
+
+        </div>
+
+        <!-- HERO VISUAL -->
+        <div class="hero-visual reveal-right visible">
+
+            <div class="code-window">
+
+                <div class="code-window-header">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+
+                    <span>POO.java</span>
+                </div>
+
+                <pre><span class="kw">public class</span> <span class="cl">Estudiante</span> {
+
+    <span class="kw">String</span> nombre;
+    <span class="kw">int</span> edad;
+
+    <span class="kw">public void</span> <span class="fn">saludar</span>() {
+        System.out.println(
+            <span class="str">"Hola, soy estudiante"</span>
+        );
+    }
+}
+</pre>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat-card">
+                    <span class="stat-num">5</span>
+                    <span class="stat-label">Temas principales</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-num">10</span>
+                    <span class="stat-label">Ejemplos Java</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-num">10</span>
+                    <span class="stat-label">Ejercicios</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INTRODUCCION -->
+<section class="content-section" id="introduccion">
+
+    <div class="container">
+
+        <div class="section-header reveal visible">
+            <div class="section-tag">
+                <i class="fa-solid fa-circle-info"></i>
+                Introducción
+            </div>
+
+            <h2 class="section-title">
+                Introducción a la <span>POO</span>
+            </h2>
+
+            <p class="section-subtitle">
+                La Programación Orientada a Objetos es un paradigma
+                utilizado para organizar programas mediante clases y objetos.
+            </p>
+        </div>
+
+        <div class="theory-card reveal visible">
+
+            <h3>
+                <i class="fa-solid fa-lightbulb"></i>
+                ¿Qué es la POO?
+            </h3>
+
+            <p>
+                La Programación Orientada a Objetos permite crear software
+                organizado utilizando objetos que representan elementos
+                del mundo real. Este paradigma facilita el mantenimiento,
+                reutilización y escalabilidad del código.
+            </p>
+
+            <div class="advantages-grid">
+
+                <div class="adv-item reveal visible" data-delay="0">
+                    <div class="adv-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div>
+                        <h4>Organización</h4>
+                        <p>El código se estructura mejor.</p>
+                    </div>
+                </div>
+
+                <div class="adv-item reveal visible" data-delay="80">
+                    <div class="adv-icon">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+
+                    <div>
+                        <h4>Reutilización</h4>
+                        <p>Las clases pueden reutilizarse.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CLASES Y OBJETOS -->
+<section class="content-section" id="clases">
+
+    <div class="container">
+
+        <div class="section-header reveal visible">
+
+            <div class="section-tag">
+                <i class="fa-solid fa-cube"></i>
+                Clases y Objetos
+            </div>
+
+            <h2 class="section-title">
+                Clases y <span>Objetos</span>
+            </h2>
+
+        </div>
+
+        <div class="concept-grid">
+
+            <div class="concept-card reveal visible" data-delay="0">
+                <div class="concept-icon">
+                    <i class="fa-solid fa-file-code"></i>
+                </div>
+
+                <h3>Clase</h3>
+
+                <p>
+                    Una clase es una plantilla que define atributos y
+                    comportamientos para crear objetos.
+                </p>
+            </div>
+
+            <div class="concept-card reveal visible" data-delay="100">
+                <div class="concept-icon">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+
+                <h3>Objeto</h3>
+
+                <p>
+                    Un objeto es una instancia creada a partir de una clase.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ENCAPSULAMIENTO -->
+<section class="content-section" id="encapsulamiento">
+
+    <div class="container">
+
+        <div class="section-header reveal visible">
+
+            <div class="section-tag">
+                <i class="fa-solid fa-lock"></i>
+                Encapsulamiento
+            </div>
+
+            <h2 class="section-title">
+                Encapsulamiento
+            </h2>
+
+        </div>
+
+        <div class="gs-grid">
+
+            <div class="gs-card reveal visible">
+                <div class="gs-label">
+                    Getter
+                </div>
+
+                <h4>Obtener información</h4>
+
+                <p>
+                    Los getters permiten acceder a atributos privados.
+                </p>
+            </div>
+
+            <div class="gs-card reveal visible">
+                <div class="gs-label">
+                    Setter
+                </div>
+
+                <h4>Modificar información</h4>
+
+                <p>
+                    Los setters permiten cambiar datos de manera segura.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONSTRUCTORES -->
+<section class="content-section" id="constructores">
+
+    <div class="container">
+
+        <div class="section-header reveal visible">
+
+            <div class="section-tag">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Constructores
+            </div>
+
+            <h2 class="section-title">
+                Constructores
+            </h2>
+
+        </div>
+
+        <div class="constructor-timeline">
+
+            <div class="tl-item reveal visible" data-delay="0">
+                <h4>
+                    <i class="fa-solid fa-circle"></i>
+                    Constructor Vacío
+                </h4>
+
+                <p>
+                    Permite crear objetos sin enviar parámetros.
+                </p>
+            </div>
+
+            <div class="tl-item reveal visible" data-delay="110">
+                <h4>
+                    <i class="fa-solid fa-circle"></i>
+                    Constructor con Parámetros
+                </h4>
+
+                <p>
+                    Permite inicializar atributos al crear objetos.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HERENCIA -->
+<section class="content-section" id="herencia">
+
+    <div class="container">
+
+        <div class="section-header reveal visible">
+
+            <div class="section-tag">
+                <i class="fa-solid fa-code-branch"></i>
+                Herencia
+            </div>
+
+            <h2 class="section-title">
+                Herencia
+            </h2>
+
+        </div>
+
+        <div class="inheritance-diagram reveal visible">
+
+            <div class="inh-parent">
+                Vehículo
+            </div>
+
+            <div class="inh-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+                extends
+            </div>
+
+            <div class="inh-children">
+
+                <div class="inh-child">
+                    Carro
+                </div>
+
+                <div class="inh-child">
+                    Moto
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <div class="nav-logo">
+                    <i class="fa-solid fa-code"></i>
+                    POO <span>Project</span>
+                </div>
+
+                <p>
+                    Proyecto académico enfocado en Programación
+                    Orientada a Objetos desarrollado para CORHUILA.
+                </p>
+
+                <div class="university-badge">
+                    <i class="fa-solid fa-building-columns"></i>
+                    CORHUILA
+                </div>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Integrantes</h4>
+
+                <div class="team-list">
+
+                    <div class="team-member">
+                        <i class="fa-solid fa-user"></i>
+                        Andrés Felipe Herrera Villamil
+                    </div>
+
+                    <div class="team-member">
+                        <i class="fa-solid fa-user"></i>
+                        Yeison Steven Quintero Pérez
+                    </div>
+
+                    <div class="team-member">
+                        <i class="fa-solid fa-user"></i>
+                        Mariana Ruiz Dussan
+                    </div>
+
+                    <div class="team-member">
+                        <i class="fa-solid fa-user"></i>
+                        María Gabriela Ramon Vargas
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Información</h4>
+
+                <ul class="footer-links">
+                    <li><a href="#">Programación Orientada a Objetos</a></li>
+                    <li><a href="#">Manual Web Académico</a></li>
+                    <li><a href="#">HTML, CSS y JavaScript</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Proyecto de Programación Orientada a Objetos - CORHUILA
+            </p>
+
+            <div class="footer-socials">
+
+                <div class="social-btn">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <div class="social-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+                <div class="social-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- BOTON TOP -->
+<button id="back-to-top" class="visible">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
