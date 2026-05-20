@@ -67,7 +67,7 @@ a:hover { color: var(--accent-teal); }
 }
 
 .section-tag {
-  display: inline-flex;
+   display: inline-block;
   align-items: center;
   gap: 8px;
   background: rgba(0, 212, 255, 0.1);
@@ -79,13 +79,15 @@ a:hover { color: var(--accent-teal); }
   text-transform: uppercase;
   padding: 5px 14px;
   border-radius: 50px;
-  margin-bottom: 1.1rem;
+  margin-bottom: 2rem !important;
 }
 
 .section-title {
   font-size: clamp(1.7rem, 3.5vw, 2.4rem);
   color: var(--text-primary);
-  margin-bottom: 0.6rem;
+   margin-top: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.4 !important;
 }
 
 .section-title span { color: var(--accent-cyan); }
@@ -94,7 +96,8 @@ a:hover { color: var(--accent-teal); }
   color: var(--text-secondary);
   font-size: 1.05rem;
   max-width: 680px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem !important;
+  line-height: 1.8 !important;
 }
 
 .highlight { color: var(--accent-cyan); }
