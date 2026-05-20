@@ -428,6 +428,200 @@
     </div>
 
 </section>
+    <!-- TEMA: POLIMORFISMO -->
+<section id="polimorfismo" class="reveal" style="padding: 80px 0;">
+  <div class="container">
+    <span class="section-tag">Avanzado</span>
+    <h2 class="section-title">Polimorfismo y <span>Sobreescritura</span></h2>
+    <p class="section-subtitle">Capacidad de un objeto de tomar múltiples formas mediante métodos que se comportan distinto en subclases.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>Ejemplo_Polimorfismo.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: Sobreescritura (@Override)
+class Animal { void hablar() { System.out.println("Sonido..."); } }
+class Perro extends Animal { @Override void hablar() { System.out.println("Guau!"); } }
+
+// Ejemplo 2: Polimorfismo Dinámico
+Animal miMascota = new Perro();
+miMascota.hablar(); // Imprime: Guau!</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Crea una clase 'Figura' con un método area() y sobreescríbelo en 'Circulo' y 'Cuadrado'.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Usa una lista de tipo 'Animal' para almacenar gatos y perros, y llama al método hablar() en un ciclo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMA: ABSTRACTAS E INTERFACES -->
+<section id="abstractas" class="reveal" style="padding: 80px 0; background: var(--bg-secondary);">
+  <div class="container">
+    <span class="section-tag">Arquitectura</span>
+    <h2 class="section-title">Clases <span>Abstractas e Interfaces</span></h2>
+    <p class="section-subtitle">Define contratos que las clases deben seguir para asegurar una estructura sólida.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>Interfaces.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: Interfaz
+interface Volador { void volar(); }
+class Avion implements Volador { public void volar() { /* código */ } }
+
+// Ejemplo 2: Clase Abstracta
+abstract class Empleado { abstract double calcularSueldo(); }</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Implementa una interfaz 'Conectable' con métodos encender() y apagar() en una clase 'Lampara'.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Crea una clase abstracta 'Vehiculo' y obliga a las subclases a implementar mover().</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMA: MANEJO DE EXCEPCIONES -->
+<section id="excepciones" class="reveal" style="padding: 80px 0;">
+  <div class="container">
+    <span class="section-tag">Robustez</span>
+    <h2 class="section-title">Manejo de <span>Errores</span></h2>
+    <p class="section-subtitle">Control de fallos en tiempo de ejecución para evitar que la aplicación se detenga.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>TryCatch.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: Bloque Try-Catch
+try {
+    int data = 50 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("No se puede dividir por cero");
+}
+
+// Ejemplo 2: Uso de finally
+finally { System.out.println("Cierre de recursos siempre ejecutado"); }</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Solicita un número por consola y captura la excepción si el usuario ingresa texto.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Crea una excepción personalizada llamada 'SaldoInsuficienteException'.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMA: COLECCIONES -->
+<section id="colecciones" class="reveal" style="padding: 80px 0; background: var(--bg-secondary);">
+  <div class="container">
+    <span class="section-tag">Datos</span>
+    <h2 class="section-title">Colecciones y <span>Estructuras</span></h2>
+    <p class="section-subtitle">Uso de List, Set y Map para gestionar conjuntos de datos de forma dinámica.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>Collections.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: ArrayList
+List<String> lista = new ArrayList<>();
+lista.add("Java");
+
+// Ejemplo 2: HashMap (Llave-Valor)
+Map<Integer, String> usuarios = new HashMap<>();
+usuarios.put(101, "Herrera");</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Crea un programa que elimine nombres duplicados de una lista usando un 'HashSet'.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Implementa un diccionario simple usando 'HashMap' donde la llave sea una palabra en inglés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMA: ARCHIVOS -->
+<section id="archivos" class="reveal" style="padding: 80px 0;">
+  <div class="container">
+    <span class="section-tag">I/O</span>
+    <h2 class="section-title">Lectura y <span>Escritura</span></h2>
+    <p class="section-subtitle">Persistencia de datos trabajando con archivos de texto y CSV.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>Archivos.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: Escribir archivo
+FileWriter writer = new FileWriter("notas.txt");
+writer.write("Hola Mundo Java");
+writer.close();
+
+// Ejemplo 2: Leer con Scanner
+Scanner reader = new Scanner(new File("datos.csv"));</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Lee un archivo .txt y cuenta cuántas palabras contiene.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Crea un exportador que guarde una lista de Objetos 'Persona' en un formato CSV.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMA: BUENAS PRÁCTICAS -->
+<section id="clean-code" class="reveal" style="padding: 80px 0; background: var(--bg-secondary);">
+  <div class="container">
+    <span class="section-tag">Calidad</span>
+    <h2 class="section-title">Buenas <span>Prácticas</span></h2>
+    <p class="section-subtitle">Refactorización, principios SOLID y herramientas de análisis estático.</p>
+    
+    <div class="code-window">
+      <div class="code-window-header"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>CleanCode.java</span></div>
+      <pre style="padding:20px; font-family:var(--font-code); font-size:0.9rem; color:var(--text-secondary);">
+// Ejemplo 1: Nombres descriptivos
+int d; // Mal
+int diasHastaVencimiento; // Bien (Clean Code)
+
+// Ejemplo 2: Método de responsabilidad única
+public void procesarPedido() {
+    validarStock();
+    generarFactura();
+}</pre>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;">
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 1</h4>
+        <p>Toma un código con 'números mágicos' y reemplázalos por constantes estáticas.</p>
+      </div>
+      <div style="background:var(--bg-card); padding:20px; border-radius:var(--radius-md); border:1px dashed var(--border);">
+        <h4 style="color:var(--accent-cyan);">Ejercicio 2</h4>
+        <p>Refactoriza un método largo (50 líneas) dividiéndolo en 3 métodos pequeños.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="footer" id="footer">
