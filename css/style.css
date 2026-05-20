@@ -1007,3 +1007,40 @@ a:hover { color: var(--accent-teal); }
   .hero-stats { grid-template-columns: repeat(3, 1fr); }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+.exercise-card {
+  background: var(--bg-card);
+  border: 1px dashed var(--border-hover);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.exercise-card:hover {
+  border-color: var(--accent-teal);
+  background: rgba(0, 255, 204, 0.02);
+}
+
+.exercise-card h4 {
+  color: var(--accent-teal);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.code-block {
+  font-family: var(--font-code);
+  background: #010811;
+  padding: 15px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin: 10px 0;
+  border-left: 3px solid var(--accent-cyan);
+}
